@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { BACKEND_BASE_URL } from "./config";
 
-axios.defaults.baseURL = BACKEND_BASE_URL;
+// axios.defaults.baseURL = BACKEND_BASE_URL;
+ axios.defaults.baseURL = "http://ec2-44-223-4-88.compute-1.amazonaws.com:4000";
 
 function App() {
   const [message, setMessage] = useState("");
